@@ -20,68 +20,53 @@
     <div class="in-logo">
       <img src="./image/logo-light.png" alt="logo-ligth">
     </div>
-    <table class="in-user">
-      <tr>
-        <td>
-          <input id="userid" type="text" size="40" placeholder="전화번호, 사용자 이름 또는 이메일">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input id="userid" type="password" size="40" placeholder="비밀번호">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <button class="login-btn" type="button">로그인</button>
-        </td>
-      </tr>
-    </table>
-    <table>
-      <div class="line">
+    <form id="login" action="" method="get">
+      <div class="id-user">
+        <input type="text" name="userid" id="userid" size="30">
+        <span>전화번호, 사용자 이름 또는 이메일</span>
+      </div>
+      <div class="pw-box">
+        <input type="password" name="userpw" id="userpw" size="30">
+        <span>비밀번호</span>
+      </div>
+      <button id="login-btn" type="submit">로그인</button>
+    </form>
+    <div class="line">
         또는
-      </div>
-      <div class="facebook-logo">
-        <a href=""><img src="./image/facebook-icon.png" alt="fb-icon"></a>
-        <p><a href=""><span class="facebook-logoin">Facebook</span></a>으로 로그인</p>
-      </div>
-      <div class="pwchk">비밀번호를 잊으셨나요?</div>
-    </table>
+    </div>
+    <div class="facebook-logo">
+      <a href=""><img src="./image/facebook-icon.png" alt="fb-icon"></a>
+      <p><a href=""><span class="facebook-logoin">Facebook</span></a>으로 로그인</p>
+    </div>
+    <div class="pwchk">비밀번호를 잊으셨나요?</div>
   </header>
-  
-  <main class="main">
-    <div class="download">
-      <tr>
-        <td>계정이 없으신가요?</td>
-        <td><a href="">가입하기</a></td>
-     </tr>
+  <main>
+    <div class="join-box">
+      <span>계정이 없으신가요?</span>
+      <a href="">가입하기</a>
     </div>
   </main>
-
-  <footer class="footer">
+  <footer class="footer-box">
     <div class="download-txt">
       <h4>앱을 다운로드 하세요</h4>
-    </div>
-
     <p class="footer-img">
       <a href=""><img src="./image/app-store.png" alt="app-store"></a>
       <a href=""><img src="./image/gg-play.png" alt="gg-play"></a>
     </p>
-
+    </div>
     <div>
-      <li class="footer-list1">
-        <ul>소개</ul>
-        <ul>블로그</ul>
-        <ul>채용정보</ul>
-        <ul>도움말</ul>
-        <ul>API</ul></li>
-      <li class="footer-list2">
-        <ul>개인정보처리방침</ul>
-        <ul>약관</ul>
-        <ul>위치</ul>
-        <ul>Instagram Lite</ul>
-        <ul>Dackmode</ul>
-      </li>
+      <ul class="footer-list">
+        <a href=""><li>소개</li></a>
+        <a href=""><li>블로그</li></a>
+        <a href=""><li>채용정보</li></a>
+        <a href=""><li>도움말</li></a>
+        <a href=""><li>API</li></a>
+        <a href=""><li>개인정보처리방침</li></a>
+        <a href=""><li>약관</li></a>
+        <a href=""><li>위치</li></a>
+        <a href=""><li>Instagram Lite</li></a>
+        <a href=""><li class="dack-btn">Dackmode</li></a>
+      </ul>
     </div>
     <div class="footer-list2">
       <p> ⓒ 2024 Instagram from Meta </p>
