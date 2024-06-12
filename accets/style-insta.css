@@ -1,0 +1,183 @@
+:root {
+  --body-bg: #fafafa;
+  --box-bg: #fff;
+  --box-border-color: #dbdbdb;
+  --txt-color: #262626;
+  --txt-second-color: #8e8e8e;
+  --light-blue: #0095f6;
+  --fb-color: #385185;
+  --dark-blue: #00376b;
+}
+
+.dark {
+  --body-bg: #151515;
+  --box-bg: #353535;
+  --box-border-color: #666565;
+  --txt-color: #d2d2d2;
+}
+body {
+  background-color: var(--body-bg);
+  color: var(--txt-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+button {
+  border: none;
+  /* outline: none; 커서활성화 되었을때 테두리 안보이게 */
+  outline: none;
+  background-color: transparent;
+}
+.btn-blue {
+  width: 100%;
+  color: #fff;
+  background-color: var(--light-blue);
+  padding: 12px 0;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dack-logo {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* Viewpoint height */
+  height: 100vh;
+}
+
+.from-container {
+  width: 360px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.box {
+  width: 100%;
+  background-color: var(--box-bg);
+  border-radius: 4px;
+  border: 1px solid var(--box-border-color);
+  text-align: center;
+}
+.input-box {
+  padding: 40px;
+}
+.log {
+  width: 175px;
+  height: 50px;
+  margin: 0 auto;
+}
+.logo img {
+  width: 100%;
+  object-fit: contain;
+}
+img {
+  width: 50px;
+}
+.login-form {
+  margin-top: 40px;
+}
+.animate-input {
+  margin: 6px 0;
+  height: 36px;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid var(--box-border-color);
+  padding: 0 8px;
+}
+.animate-input input {
+  height: 100%;
+  width: 100%;
+}
+.animate-input span {
+  position: absolute;
+  top:12px;
+  left: 8px;
+  font-size: 12px;
+  pointer-events: none;
+  color: var(--box-border-color);
+  transition: all 200ms ease-in-out;
+}
+.animate-input.active {
+  padding: 4px 8px 0;
+}
+.animate-input.active span {
+  top:2px;
+  font-size: 10px;
+}
+.userpw button {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  display: none;
+}
+.animate-input.active button {
+  display: inline;
+}
+/* button 타입submit 인 버튼 disabled 상태일때 보여줄화면 */
+button[type="submit"]:disabled {
+  cursor: not-allowed;
+  background-color: rgba(0,149, 246, 0.3);
+}
+.or-box {
+  display: flex;
+  align-items: center;
+}
+/* odd : 홀수  exen : 짝수*/
+.or-box div:nth-child(odd) {
+  height:1px;
+  flex-grow: 1;
+  background-color:var(--box-border-color);
+}
+.or-box div:nth-child(even) {
+  color: var(--txt-second-color);
+  margin: 30px 10px;
+  font-weight: 700;
+}
+.fb-btn a { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fb-btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  object-fit: contain;
+}
+.fb-btn span {
+  color: var(--fb-color);
+  font-weight: 700;
+}
+.forgot-pw {
+  display: block;
+  font-size: 14px;
+  margin-top: 22px;
+  color: var(--dark-blue);
+}
+
+
+
