@@ -22,12 +22,20 @@
     </div>
     <form id="login" action="" method="get">
       <div class="id-user">
-        <input type="text" name="userid" id="userid" size="30">
-        <span>전화번호, 사용자 이름 또는 이메일</span>
+        <tr>
+          <td>
+            <input type="text" name="userid" id="userid" size="30" placeholder="전화번호, 사용자 이름 또는 이메일">
+            <!-- <span>전화번호, 사용자 이름 또는 이메일</span> -->
+          </td>
+        </tr>
       </div>
       <div class="pw-box">
-        <input type="password" name="userpw" id="userpw" size="30">
-        <span>비밀번호</span>
+        <tr>
+          <td>
+            <input type="password" name="userpw" id="userpw" size="30" placeholder="비밀번호">
+           <!-- <span>비밀번호</span> -->
+          </td>
+        </tr>
       </div>
       <button id="login-btn" type="submit">로그인</button>
     </form>
