@@ -45,7 +45,13 @@ button {
   cursor: pointer;
 }
 
-.dack-logo {
+.dark-logo {
+  display: none;
+}
+body.dark .dark-logo {
+  display: block;
+}
+body.dark .light-logo {
   display: none;
 }
 
@@ -83,7 +89,7 @@ button {
 .input-box {
   padding: 40px;
 }
-.log {
+.logo {
   width: 175px;
   height: 50px;
   margin: 0 auto;
@@ -132,6 +138,9 @@ button {
   cursor: pointer;
   display: none;
 }
+body.dark .userpw button {
+  color: #fff;
+}
 .animate-input.active button {
   display: inline;
 }
@@ -175,6 +184,9 @@ button[type="submit"]:disabled {
   font-size: 14px;
   margin-top: 22px;
   color: var(--dark-blue);
+}
+body.dark .forgot-pw {
+  color: #fff;
 }
 .join-box {
   margin-top: 12px;
