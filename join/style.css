@@ -1,0 +1,99 @@
+:root {
+  --body-bg: #fafafa;
+  --box-bg: #fff;
+  --box-border-color: #dbdbdb;
+  --txt-color: #262626;
+  --txt-second-color: #8e8e8e;
+  --light-blue: #0095f6;
+  --fb-color: #385185;
+  --dark-blue: #00376b;
+}
+
+.dark {
+  --body-bg: #151515;
+  --box-bg: #353535;
+  --box-border-color: #666565;
+  --txt-color: #d2d2d2;
+}
+body {
+  background-color: var(--body-bg);
+  color: var(--txt-color);
+}
+
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+input,
+button {
+  border: none;
+  /* outline: none; 커서활성화 되었을때 테두리 안보이게 */
+  outline: none;
+  background-color: transparent;
+}
+.btn-blue {
+  width: 100%;
+  color: #fff;
+  background-color: var(--light-blue);
+  padding: 12px 0;
+  margin: 12px 0;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  height: 100vh;
+
+}
+.form-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+  width: 360px;
+  border:1px solid var(--box-border-color);
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  margin: 25px 0;
+}
+.logo {
+  width: 180px;
+  height: 50px;
+  margin: 0 auto;
+}
+.logo img {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+.login-form {
+  margin-top: 30px;
+}
+.join {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+.join img {
+
+  width: 20px;
+  height: 20px;
+}
