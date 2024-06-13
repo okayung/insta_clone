@@ -92,8 +92,104 @@ button {
   font-weight: 700;
   padding: 10px 0;
 }
+.join p{
+  margin-bottom: 10px;
+}
 .join img {
-
   width: 20px;
   height: 20px;
+}
+.or-box {
+  display: flex;
+  align-items: center;
+}
+.or-box div:nth-child(odd) {
+  height:1px;
+  flex-grow: 1;
+  background-color:var(--box-border-color);
+}
+.or-box div:nth-child(even) {
+  color: var(--txt-second-color);
+  margin: 20px 10px;
+  font-weight: 700;
+}
+
+.animate-input {
+  margin: 6px 0;
+  height: 36px;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid var(--box-border-color);
+  padding: 0 8px;
+}
+.animate-input input {
+  height: 100%;
+  width: 100%;
+}
+.animate-input span {
+  position: absolute;
+  top:12px;
+  left: 8px;
+  font-size: 12px;
+  pointer-events: none;
+  color: var(--box-border-color);
+  transition: all 200ms ease-in-out;
+}
+.animate-input.active {
+  padding: 4px 8px 0;
+}
+.animate-input.active span {
+  top:2px;
+  font-size: 10px;
+}
+.userpw button {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  display: none;
+}
+
+.usertxt {
+  font-size: 13px;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.logoin-box {
+  margin-top: 12px;
+  padding: 16px 0;
+}
+.logoin-box span {
+  color: var(--light-blue);
+  font-weight: 700;
+}
+
+.app-txt{
+  margin: 30px 0;
+}
+.app-down img {
+  width: 136px;
+  height: 40px;
+  object-fit: contain;
+}
+
+footer {
+  text-align: center;
+}
+.footer-menu-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer-menu-list a {
+  padding: 0 8px;
+  color: var(--txt-second-color);
+  font-size: 14px;
+
+}
+.copyfight {
+  color: var(--txt-second-color);
+  margin: 30px 0;
 }
