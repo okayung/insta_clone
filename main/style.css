@@ -21,9 +21,6 @@ body {
 a {
   text-decoration: none;
 }
-img {
-  width: 50px;
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,10 +32,59 @@ button {
   outline: none;
   background-color: transparent;
 }
-
 .wrapper {
-
+  background-color: var(--body-bg);
+}
+.box {
+  width: 60%;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--box-bg);
+  border-bottom:2px solid var(--box-border-color);
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--box-border-color);
 }
 .logo img {
   width: 100px;
+}
+.logo p i {
+  font-size: 20px;
+}
+.main-one {
+  display: flex;
+  justify-content: space-around;
+}
+.post1 {
+  width: 60%;
+  border: 2px solid var(--box-border-color);
+}
+.post-user {
+  display: flex;
+  justify-content: space-between;
+}
+.post-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post-img1 img {
+  width: 100%
+}
+
+
+.post2 {
+  width: 25%;
+  border: 2px solid var(--box-border-color);
+}
+.post2 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
