@@ -36,18 +36,20 @@ button {
   background-color: var(--body-bg);
 }
 .box {
-  width: 60%;
   margin-bottom: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: var(--box-bg);
+  text-align: center;
   border-bottom:2px solid var(--box-border-color);
 }
 .logo {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   border-bottom: var(--box-border-color);
+  max-width: 1200px;
 }
 .logo img {
   width: 100px;
@@ -55,7 +57,11 @@ button {
 .logo p i {
   font-size: 20px;
 }
-.main-one {
+main {
+  width:90%;
+}
+.main-one,
+.main-sec {
   display: flex;
   justify-content: space-around;
 }
@@ -66,8 +72,29 @@ button {
 .post-user {
   display: flex;
   justify-content: space-between;
+  font-size: 12px;
+  align-items: center;
+  margin: 0 10px;
 }
-.post-user img {
+.post-jin {
+  display: flex;
+  align-items: center;
+
+}
+.post-user div {
+  margin-left: 10px;
+  font-size: 12px;
+
+}
+.post-user div p {
+  font-size: 10px;
+}
+.post-user div i {
+ 
+}
+
+.post-user img,
+.user-lala img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -76,10 +103,17 @@ button {
 .post-img1 img {
   width: 100%
 }
-
+.post-img1 p,
+.post-img1 h3  {
+  font-size: 12px;;
+}
 
 .post2 {
+  display: flex;
+  flex-direction: column;
   width: 25%;
+  font-size: 12px;
+  align-items: center;
   border: 2px solid var(--box-border-color);
 }
 .post2 img {
@@ -87,4 +121,72 @@ button {
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
+}
+.user-sidebar {
+  flex-direction: column;
+  font-size: 12px;
+}
+.side-one {
+  display: flex;
+  align-items: center;
+  margin: 5px 10px;
+}
+.side-one div {
+  padding-left: 10px;
+}
+.side-one div p {
+  color: var(--txt-second-color);
+}
+.review {
+
+}
+.post-mark {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin: 5px 5px;
+}
+.post-good {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px;
+}
+
+.post-dog {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.post-dog h3 span {
+  font-size: 16px;
+  font-weight: 700;
+}
+.post-dog i {
+  color: var(--txt-second-color);
+}
+.time {
+  padding-left: 5px;
+  padding-bottom: 10px;
+  color: var(--txt-second-color);
+  border-bottom: 2px solid var(--box-border-color);
+}
+.review {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5px;
+}
+.upload-btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background-color: #0095f6;
+}
+.main-sec {
+  width: 60%;
+}
+.user-lala img {
+  width: 100%;
 }
